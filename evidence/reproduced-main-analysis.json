@@ -1,0 +1,173 @@
+{
+  "protocol": "mba-economic-main-v1",
+  "mode": "openai",
+  "dataset_sha256": "f9138a155c8f9ee173f163c69c4ee933eb1b88bbd50adb9309a9b101147963e3",
+  "unique_tasks": 192,
+  "repeats": 3,
+  "paired_blocks": 576,
+  "methods": [
+    {
+      "method": "single_small",
+      "correct": 413,
+      "episodes": 576,
+      "accuracy": 0.7170138888888888,
+      "answered": 572,
+      "attributed_cost_eur": 0.9103041201041441,
+      "coverage": 0.9930555555555556,
+      "accuracy_when_answered": 0.722027972027972,
+      "cost_per_correct_eur": 0.0022041261987993804,
+      "mean_serial_latency_seconds": 6.139794697286455,
+      "unanimous_wrong": null,
+      "group_harms": 0,
+      "group_repairs": 0,
+      "agent_correct_to_incorrect": 0,
+      "agent_incorrect_to_correct": 0,
+      "uncertain_attempt_upper_bound_eur": 0,
+      "cost_per_correct_upper_bound_eur": 0.0022041261987993804
+    },
+    {
+      "method": "single_strong",
+      "correct": 427,
+      "episodes": 576,
+      "accuracy": 0.7413194444444444,
+      "answered": 569,
+      "attributed_cost_eur": 5.01672852347368,
+      "coverage": 0.9878472222222222,
+      "accuracy_when_answered": 0.7504393673110721,
+      "cost_per_correct_eur": 0.01174877874349808,
+      "mean_serial_latency_seconds": 7.69968594330382,
+      "unanimous_wrong": null,
+      "group_harms": 0,
+      "group_repairs": 0,
+      "agent_correct_to_incorrect": 0,
+      "agent_incorrect_to_correct": 0,
+      "uncertain_attempt_upper_bound_eur": 0,
+      "cost_per_correct_upper_bound_eur": 0.01174877874349808
+    },
+    {
+      "method": "self_correct",
+      "correct": 414,
+      "episodes": 576,
+      "accuracy": 0.71875,
+      "answered": 572,
+      "attributed_cost_eur": 1.503813666808288,
+      "coverage": 0.9930555555555556,
+      "accuracy_when_answered": 0.7237762237762237,
+      "cost_per_correct_eur": 0.003632400161372676,
+      "mean_serial_latency_seconds": 8.616047654947915,
+      "unanimous_wrong": null,
+      "group_harms": 1,
+      "group_repairs": 2,
+      "agent_correct_to_incorrect": 1,
+      "agent_incorrect_to_correct": 2,
+      "uncertain_attempt_upper_bound_eur": 0.385630553921408,
+      "cost_per_correct_upper_bound_eur": 0.004563874929298783
+    },
+    {
+      "method": "vote",
+      "correct": 394,
+      "episodes": 576,
+      "accuracy": 0.6840277777777778,
+      "answered": 523,
+      "attributed_cost_eur": 2.816238078425712,
+      "coverage": 0.9079861111111112,
+      "accuracy_when_answered": 0.7533460803059273,
+      "cost_per_correct_eur": 0.007147812381791147,
+      "mean_serial_latency_seconds": 19.041914301965274,
+      "unanimous_wrong": 43,
+      "group_harms": 0,
+      "group_repairs": 0,
+      "agent_correct_to_incorrect": 0,
+      "agent_incorrect_to_correct": 0,
+      "uncertain_attempt_upper_bound_eur": 0,
+      "cost_per_correct_upper_bound_eur": 0.007147812381791147
+    },
+    {
+      "method": "independent_revision",
+      "correct": 401,
+      "episodes": 576,
+      "accuracy": 0.6961805555555556,
+      "answered": 523,
+      "attributed_cost_eur": 4.52360698289832,
+      "coverage": 0.9079861111111112,
+      "accuracy_when_answered": 0.7667304015296367,
+      "cost_per_correct_eur": 0.011280815418699052,
+      "mean_serial_latency_seconds": 26.379809335616315,
+      "unanimous_wrong": 42,
+      "group_harms": 0,
+      "group_repairs": 7,
+      "agent_correct_to_incorrect": 7,
+      "agent_incorrect_to_correct": 25,
+      "uncertain_attempt_upper_bound_eur": 0,
+      "cost_per_correct_upper_bound_eur": 0.011280815418699052
+    },
+    {
+      "method": "debate",
+      "correct": 431,
+      "episodes": 576,
+      "accuracy": 0.7482638888888888,
+      "answered": 569,
+      "attributed_cost_eur": 5.612495789250224,
+      "coverage": 0.9878472222222222,
+      "accuracy_when_answered": 0.7574692442882249,
+      "cost_per_correct_eur": 0.01302203199362001,
+      "mean_serial_latency_seconds": 26.413111647583325,
+      "unanimous_wrong": 99,
+      "group_harms": 4,
+      "group_repairs": 41,
+      "agent_correct_to_incorrect": 51,
+      "agent_incorrect_to_correct": 166,
+      "uncertain_attempt_upper_bound_eur": 0.385630553921408,
+      "cost_per_correct_upper_bound_eur": 0.013916766457474786
+    }
+  ],
+  "paired_counts": {
+    "both_noncorrect": 139,
+    "both_correct": 395,
+    "debate_only": 36,
+    "ir_only": 6
+  },
+  "debate_minus_ir_accuracy": 0.052083333333333336,
+  "paired_cluster_bootstrap_95pct": [
+    0.029513888888888885,
+    0.07638888888888888
+  ],
+  "bootstrap_draws": 10000,
+  "bootstrap_unit": "task (three repetitions retained together; stratified by family)",
+  "sensitivity_by_template": {
+    "break_even_v3_L1": {
+      "tasks": 32,
+      "debate_minus_ir_accuracy": 0.0
+    },
+    "break_even_v3_L2": {
+      "tasks": 32,
+      "debate_minus_ir_accuracy": 0.010416666666666666
+    },
+    "break_even_v3_L3": {
+      "tasks": 32,
+      "debate_minus_ir_accuracy": 0.041666666666666664
+    },
+    "supplier_v3_L1": {
+      "tasks": 32,
+      "debate_minus_ir_accuracy": 0.0
+    },
+    "supplier_v3_L2": {
+      "tasks": 32,
+      "debate_minus_ir_accuracy": 0.16666666666666666
+    },
+    "supplier_v3_L3": {
+      "tasks": 32,
+      "debate_minus_ir_accuracy": 0.09375
+    }
+  },
+  "physical_cost_eur": 13.840406884004802,
+  "attributed_cost_eur": 20.383187160960368,
+  "uncertain_transport_attempts": 2,
+  "unknown_transport_cost_upper_bound_eur": 0.771261107842816,
+  "physical_cost_upper_bound_eur": 14.611667991847618,
+  "invalid_calls": 1,
+  "truncated_calls": 1,
+  "empirical_target_90pct": [],
+  "cheapest_empirical_90pct_method": null,
+  "note": "A confidence interval crossing zero supports no directional superiority claim. No target is guaranteed by an empirical threshold alone."
+}
